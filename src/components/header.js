@@ -12,8 +12,9 @@ function classNames(...classes) {
 export default function HeaderComponent() {
 
   const [enabled, setEnabled] = useState((typeof window !== 'undefined')?(localStorage.theme==='dark'|| (!'theme' in localStorage && window.matchMedia('(prefers-color-scheme: dark)').matches)):false);
+
   useEffect(() => {
-    setEnabled((typeof window !== 'undefined')?(localStorage.theme==='dark'|| (!'theme' in localStorage && window.matchMedia('(prefers-color-scheme: dark)').matches)):false)
+    setEnabled((localStorage.theme==='dark'|| (!'theme' in localStorage && window.matchMedia('(prefers-color-scheme: dark)').matches)))    
   },[])
   if(enabled){
     document.querySelector('html').classList.add('dark');
@@ -74,6 +75,7 @@ export default function HeaderComponent() {
         </Switch.Label>
       
       <Switch
+      
         checked={enabled}
         onChange={(enabled)=>{
           setEnabled(enabled);
