@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Disclosure} from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
 
@@ -12,7 +12,9 @@ function classNames(...classes) {
 export default function HeaderComponent() {
 
   const [enabled, setEnabled] = useState((typeof window !== 'undefined')?(localStorage.theme==='dark'|| (!'theme' in localStorage && window.matchMedia('(prefers-color-scheme: dark)').matches)):false);
-  
+  useEffect(() => {
+    setEnabled((typeof window !== 'undefined')?(localStorage.theme==='dark'|| (!'theme' in localStorage && window.matchMedia('(prefers-color-scheme: dark)').matches)):false)
+  },[])
   if(enabled){
     document.querySelector('html').classList.add('dark');
   }  
