@@ -12,7 +12,7 @@ function classNames(...classes) {
 export default function HeaderComponent() {
 
   const [enabled, setEnabled] = useState((typeof window !== 'undefined')?(localStorage.theme==='dark'|| (!'theme' in localStorage && window.matchMedia('(prefers-color-scheme: dark)').matches)):false);
-
+  
   if(enabled){
     document.querySelector('html').classList.add('dark');
   }  
@@ -75,7 +75,6 @@ export default function HeaderComponent() {
         checked={enabled}
         onChange={(enabled)=>{
           setEnabled(enabled);
-          if(typeof localStorage === 'undefined')return;
           let htmlClasses = document.querySelector('html').classList;
           if(localStorage.theme === 'dark') {
             htmlClasses.remove('dark');
