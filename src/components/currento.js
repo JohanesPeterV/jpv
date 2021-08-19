@@ -4,7 +4,7 @@ import React from "react";
 export default function CurrentOccupationComponent() {
   return (
     <div
-      onMouseMove={parallax}
+      // onMouseMove={parallax}
       id="container"
       className="transition-colors duration-300 bg-white dark:bg-dark-secondary py-8"
     >
