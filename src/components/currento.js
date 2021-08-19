@@ -6,7 +6,7 @@ export default function CurrentOccupationComponent() {
     <div
       onMouseMove={parallax}
       id="container"
-      className="transition-colors duration-300 bg-white dark:bg-dark-secondary py-8"
+      className="transition-colors duration-300 bg-light-secondary dark:bg-dark-secondary py-8"
     >
       <div className="flex flex-col items-center max-w-7xl mx-auto py-16 px-4 text-center sm:py-24 sm:px-6 lg:px-8">
         <p className="transition-all duration-300 mt-1 text-light-text-primary dark:text-dark-text-primary text-2xl font-bold sm:text-2xl sm:tracking-tight md:text-3xl lg:text-5xl ">

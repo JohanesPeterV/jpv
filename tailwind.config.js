@@ -23,7 +23,7 @@ module.exports = {
         light : {
           primary:'#ffffff',
           secondary:'#e8eaeb',
-          card:'#d2d4d5',
+          card:'#ebedef',
           indigo:{
             trans:'#f6f7ff'
           },
