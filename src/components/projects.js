@@ -11,17 +11,17 @@ const projects = [
     linkedinUrl: "#",
   },
 ];
-export default function ProjectsComponent() {
+export default function RecentProjectsComponent() {
   return (
     <div className="transition-colors duration-300 bg-white dark:bg-dark-primary">
       <div className="mx-auto py-12 px-4 max-w-7xl sm:px-6 lg:px-8 lg:py-24">
         <div className="space-y-12">
           <div className="space-y-2 sm:space-y-1 xl:max-w-none">
             <h2 className="text-3xl font-extrabold transition-all duration-300 text-light-text-primary dark:text-dark-text-primary tracking-tight sm:text-4xl text-center">
-              My Projects
+              Recent Projects
             </h2>
             <p className="text-xl text-gray-500 text-center transition-all duration-300 text-light-text-secondary dark:text-dark-text-secondary">
-              Projects I've been working on.
+              Recent Projects I've been working on.
             </p>
           </div>
           <ul className="space-y-12 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:grid-cols-4 lg:gap-x-8">

@@ -19,14 +19,14 @@ export default function CurrentOccupationComponent() {
         
         <a
           href="https://www.instagram.com/slcbinusuniv/"
-          className="group rounded-2xl overflow-hidden relative w-2/3 border-8 border-light-text-primary dark:border-dark-text-primary"
+          className="group rounded-2xl overflow-hidden relative w-2/3 border-4 border-light-text-primary dark:border-dark-text-primary"
         >
 
-          {/* <div className="px-2 flex justify-center items-center text-xs sm:text-l md:text-2xl color-transition duration-300 absolute z-50 w-full h-full opacity-0 group-hover:opacity-80  bg-light-primary dark:bg-dark-primary text-light-text-primary dark:text-dark-text-primary">
+          <div className="px-2 flex justify-center items-center text-xs sm:text-l md:text-2xl color-transition duration-300 absolute z-50 w-full h-full opacity-0 group-hover:opacity-80  bg-light-primary dark:bg-dark-primary text-light-text-primary dark:text-dark-text-primary">
                 In Honesty and Hardwork, We Strive for Excellence
-            </div> */}
+            </div>
 
-          {/* <StaticImage className="slide absolute z-40 filter blur-lg opacity-0 color-transition duration-300 group-hover:opacity-100" src="../assets/images/202.JPG" placeholder="dominantColor" alt="jp"/> */}
+          <StaticImage className="slide absolute z-40 filter blur-lg opacity-0 color-transition duration-300 group-hover:opacity-100" src="../assets/images/202.JPG" placeholder="dominantColor" alt="jp"/>
 
           <StaticImage
             style={{position: "absolute"}}
