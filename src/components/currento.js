@@ -4,7 +4,7 @@ import React from "react";
 export default function CurrentOccupationComponent() {
   return (
     <div
-      // onMouseMove={parallax}
+      onMouseMove={parallax}
       id="container"
       className="transition-colors duration-300 bg-white dark:bg-dark-secondary py-8"
     >
@@ -29,13 +29,14 @@ export default function CurrentOccupationComponent() {
           {/* <StaticImage className="slide absolute z-40 filter blur-lg opacity-0 color-transition duration-300 group-hover:opacity-100" src="../assets/images/202.JPG" placeholder="dominantColor" alt="jp"/> */}
 
           <StaticImage
-            className="layer absolute z-30 "
+            style={{position: "absolute"}}
+            className="layer z-30 "
             src="../assets/images/202.png"
             placeholder="dominantColor"
             alt="jp"
           />
           <StaticImage
-            className="relative opacity-60 z-10 "
+            className="opacity-60 z-10 "
             src="../assets/images/shadow202.png"
             placeholder="blurred"
             alt="jp"

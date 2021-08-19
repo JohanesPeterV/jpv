@@ -8,7 +8,7 @@ export default function LayoutComponent(props) {
       <Helmet>
         <html lang="en"/>
         <title>Johanes Peter Vincentius</title>
-        <link rel="icon" href="../assets/image/darkjp.png" type="image/png"/>
+        <link rel="icon" href="/assets/image/darkjp.png" type="image/png"/>
       </Helmet>
         <HeaderComponent/>
           {props.children}
