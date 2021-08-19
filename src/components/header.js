@@ -10,9 +10,7 @@ function classNames(...classes) {
 }
 
 export default function HeaderComponent() {
-
   const [enabled, setEnabled] = useState(false);
-
   useEffect(() => {
     setEnabled((localStorage.theme==='dark'|| (!'theme' in localStorage && window.matchMedia('(prefers-color-scheme: dark)').matches)))    
   },[])
