@@ -26,7 +26,7 @@ export default function CurrentOccupationComponent() {
                 In Honesty and Hardwork, We Strive for Excellence
             </div>
 
-          <StaticImage className="slide absolute z-40 filter blur-lg opacity-0 color-transition duration-300 group-hover:opacity-100" src="../assets/images/202.JPG" placeholder="dominantColor" alt="jp"/>
+          <StaticImage style={{position: "absolute"}} className="slide z-40 filter blur-lg opacity-0 color-transition duration-300 group-hover:opacity-100" src="../assets/images/202.JPG" placeholder="dominantColor" alt="jp"/>
 
           <StaticImage
             style={{position: "absolute"}}
