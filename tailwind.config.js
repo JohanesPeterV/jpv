@@ -36,7 +36,8 @@ module.exports = {
   },
   variants: {
     extend: {
-      display:['dark']
+      display:['dark'],
+      blur:['group-hover']
     },
   },
   plugins: [],

@@ -26,23 +26,23 @@ export default function CurrentOccupationComponent() {
                 In Honesty and Hardwork, We Strive for Excellence
             </div>
 
-          <StaticImage style={{position: "absolute"}} className="slide z-40 filter blur-lg opacity-0 color-transition duration-300 group-hover:opacity-100" src="../assets/images/202.JPG" placeholder="dominantColor" alt="jp"/>
 
           <StaticImage
             style={{position: "absolute"}}
-            className="layer z-30 "
+            className="layer z-30 filter blur-none group-hover:blur-md"
             src="../assets/images/202.png"
             placeholder="dominantColor"
             alt="jp"
           />
           <StaticImage
-            className="opacity-60 z-10 "
+            className="opacity-60 z-10 filter blur-none group-hover:blur-md"
             src="../assets/images/shadow202.png"
             placeholder="blurred"
             alt="jp"
           />
         </a>
       </div>
+      
       {/* {document.addEventListener("mousemove", parallax)} */}
       <script src="./parallax.js"></script>
     </div>
