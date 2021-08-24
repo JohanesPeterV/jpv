@@ -57,6 +57,5 @@ function parallax(e) {
     const y=(e.clientY*0.006*(i+1));
     docs[i].style.transform=`translateX(${x}px) translateY(${y}px)`;
     
-    console.log('aaa');
   };
 }
