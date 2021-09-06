@@ -6,7 +6,7 @@ export default function CurrentOccupationComponent() {
     <div
       onMouseMove={parallax}
       id="container"
-      className="transition-colors duration-300 bg-light-secondary dark:bg-dark-secondary py-8"
+      className="transition-colors duration-300 bg-light-secondary dark:bg-dark-secondary py-72 lg:py-8 md:py-16"
     >
       <div className="flex flex-col items-center max-w-7xl mx-auto py-16 px-4 text-center sm:py-24 sm:px-6 lg:px-8">
         <p className="transition-all duration-300 mt-1 text-light-text-primary dark:text-dark-text-primary text-2xl font-bold sm:text-2xl sm:tracking-tight md:text-3xl lg:text-5xl ">
@@ -52,11 +52,12 @@ function parallax(e) {
   var container=document.getElementById('container');
   var docs=document.getElementsByClassName('layer');
   let len=docs.length;
+  const w=container.offsetWidth/1903;
+  const h=container.offsetHeight/986;
   for(let i=0;i<len;i++) {
-    const x=(e.clientX*0.006*(i+1)-6.2*(i+1));
-    const y=(e.clientY*0.006*(i+1));
+    const x=(e.clientX*0.006*(i+1)-3.2*(i+1))*w;
+    const y=(e.clientY*0.006*(i+1))*h;
     docs[i].style.transform=`translateX(${x}px) translateY(${y}px)`;
     
-    console.log('aaa');
   };
 }

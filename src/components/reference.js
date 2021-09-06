@@ -59,11 +59,11 @@ const navigation = {
   }
 export default function ReferenceComponent(props){
     return (
-          <div className="flex flex-wrap flex-row items-center justify-center space-x-6 md:order-2">
+          <div className={"flex flex-wrap flex-row items-center justify-center space-x-6 md:order-2"+props.className}>
             {navigation.social.map((item) => (
               <a key={item.name} href={item.href} className="transition-colors duration-300 text-light-text-secondary dark:text-dark-text-secondary hover:text-light-text-third dark:hover:text-dark-text-third">
                 <span className="sr-only">{item.name}</span>
-                <item.icon className={props.large?"h-10 w-10":"h-6 h-6"} aria-hidden="true" />
+                <item.icon className={props.large?"h-8 w-8 sm:h-10 sm:w-10":"h-6 h-6"} aria-hidden="true" />
               </a>
             ))}
           </div>

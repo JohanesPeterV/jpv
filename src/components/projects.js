@@ -3,11 +3,20 @@ import React from "react";
 
 const projects = [
   {
+    name: "Phat",
+    desc: "A discord bot that focuses on utilizing many APIs.",
+    stacks: ["Node JS"],
+    liveLink: "https://discord.com/api/oauth2/authorize?client_id=865210147822764052&permissions=8&scope=bot",
+    gitLink: "https://github.com/JopHme/phat",
+    
+  },
+  {
     name: "SpaceShooter 202",
     desc: "A Brick shooting game made using html5 canvas and javascript",
     stacks: ["HTML", "Canvas", "CSS", "JavaScript"],
     liveLink: "https://jophme.github.io/SpaceDefender202/",
     gitLink: "https://github.com/JopHme/SpaceDefender202",
+    
   },
 ];
 

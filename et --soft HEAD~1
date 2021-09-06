@@ -1,0 +1,114 @@
+[33mcommit 2a7183e417c391e03bfdf55ced479709ec41b8de[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: JopHme <60497959+JopHme@users.noreply.github.com>
+Date:   Tue Aug 24 23:51:57 2021 +0700
+
+    removed debugging purposed console logs
+
+[33mcommit 197650a2a9bcfdb1cd70f2668aa2de15aa3f0835[m
+Author: JopHme <60497959+JopHme@users.noreply.github.com>
+Date:   Tue Aug 24 23:50:00 2021 +0700
+
+    fixed blur logic
+
+[33mcommit 57339fcaa9a527bc95e538cd5686eb21279e8b71[m
+Author: JopHme <60497959+JopHme@users.noreply.github.com>
+Date:   Thu Aug 19 21:02:59 2021 +0700
+
+    finalized recent project section
+
+[33mcommit 2e678728ecbfdd226d275a1d1e92bf670a89cbff[m
+Author: JopHme <60497959+JopHme@users.noreply.github.com>
+Date:   Thu Aug 19 10:07:43 2021 +0700
+
+    fixed deployment issues
+
+[33mcommit 3c107a34e460aedd3bd8b0daabf9dbcbb5687eb8[m
+Author: JopHme <60497959+JopHme@users.noreply.github.com>
+Date:   Thu Aug 19 10:00:15 2021 +0700
+
+    uncommented current occupation hover effect
+
+[33mcommit e2caa6feec82bbca0b1bdd99e82b9c497b081e9a[m
+Author: JopHme <60497959+JopHme@users.noreply.github.com>
+Date:   Thu Aug 19 09:37:49 2021 +0700
+
+    fixed web deployed parallax
+
+[33mcommit ea43cbcbbebf6256a3ab26360f32459908b8c4cd[m
+Author: JopHme <60497959+JopHme@users.noreply.github.com>
+Date:   Thu Aug 19 09:16:54 2021 +0700
+
+    trying to fix web deployed parallax
+
+[33mcommit 7827df48a4bc9d65dfdf7e8f37578d025483fff1[m
+Author: JopHme <60497959+JopHme@users.noreply.github.com>
+Date:   Thu Aug 19 08:25:22 2021 +0700
+
+    added project and current occupation parallax
+
+[33mcommit c3205c73f800b7c2c87676e92e146c6752945f77[m
+Author: JopHme <60497959+JopHme@users.noreply.github.com>
+Date:   Sun Aug 1 17:24:55 2021 +0700
+
+    fixing dark mode switch
+
+[33mcommit 0fb832a2a23442bf927fe4f0083fc0179fb22085[m
+Author: JopHme <60497959+JopHme@users.noreply.github.com>
+Date:   Sun Aug 1 17:17:17 2021 +0700
+
+    fixing dark mode switch
+
+[33mcommit 47b5adc60c2489fbec41b4ee03000b2b6fe8162f[m
+Author: JopHme <60497959+JopHme@users.noreply.github.com>
+Date:   Sun Aug 1 17:06:02 2021 +0700
+
+    fixing dark mode switch
+
+[33mcommit 32a3565b7e88dc622c955cfb8256482353190917[m
+Author: JopHme <60497959+JopHme@users.noreply.github.com>
+Date:   Sun Aug 1 16:36:13 2021 +0700
+
+    fixing dark mode
+
+[33mcommit 760efd76772e3ad7dea48ad9a8f59b563ef62a5d[m
+Merge: d667ae7 082d931
+Author: JopHme <60497959+JopHme@users.noreply.github.com>
+Date:   Sun Aug 1 16:22:00 2021 +0700
+
+    Merge branch 'master' of https://github.com/JopHme/jpv
+
+[33mcommit d667ae7be82f8c66b3681c0c3c7f2e377a9cf26b[m
+Author: JopHme <60497959+JopHme@users.noreply.github.com>
+Date:   Sun Aug 1 16:18:19 2021 +0700
+
+    fixed dark mode switch
+
+[33mcommit 082d931f4815d39f9277e95a52a30ca195d176f9[m
+Author: JopHme <60497959+JopHme@users.noreply.github.com>
+Date:   Sun Aug 1 13:12:08 2021 +0700
+
+    removed fsevents
+
+[33mcommit e8e31c95a084c2032c7331434d345b957748265f[m
+Author: JopHme <60497959+JopHme@users.noreply.github.com>
+Date:   Sun Aug 1 13:07:37 2021 +0700
+
+    added ooptional dependencies
+
+[33mcommit a4f4c04827b2e26326b5ca61a4f10330df031c8c[m
+Author: JopHme <60497959+JopHme@users.noreply.github.com>
+Date:   Sun Aug 1 13:05:54 2021 +0700
+
+    changed method of importing tailwind
+
+[33mcommit d1cc1755cabef37162d10787d86ca5bfc72db6b9[m
+Author: JopHme <60497959+JopHme@users.noreply.github.com>
+Date:   Sun Aug 1 12:18:26 2021 +0700
+
+    first commit
+
+[33mcommit 535011ef89b477f124e708a494737d25c94502e7[m
+Author: JopHme <60497959+JopHme@users.noreply.github.com>
+Date:   Fri Jul 30 14:38:46 2021 +0700
+
+    Initial commit from gatsby

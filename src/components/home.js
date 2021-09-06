@@ -6,7 +6,7 @@ import ProjectsComponent from "./projects"
 
 const HomePage = () => {
   return (
-    <main className="space-y-28 py-28 sm:space-y-52 sm:py-52 transition-colors duration-300 bg-white dark:bg-dark-primary">
+    <main className="space-y-52 py-28 sm:space-y-52 sm:py-52 transition-colors duration-300 bg-white dark:bg-dark-primary">
       <IntroComponent/>
       <CurrentOccupationComponent/>
       <ProjectsComponent/>    
