@@ -1,12 +1,12 @@
 import React from "react"
-import HomePage from "../components/home";
+import HomePageContent from "../components/home";
 import LayoutComponent from "../components/layout";
 // markup
 const IndexPage = () => {
   return (
     <div>
-      <LayoutComponent>
-        <HomePage/>
+      <LayoutComponent link='home'>
+        <HomePageContent/>
       </LayoutComponent>
     </div>
   )

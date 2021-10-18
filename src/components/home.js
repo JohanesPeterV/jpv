@@ -4,15 +4,14 @@ import CurrentOccupationComponent from "./currento"
 import ProjectsComponent from "./projects"
 
 
-const HomePage = () => {
+const HomePageContent = () => {
   return (
     <main className="space-y-52 py-28 sm:space-y-52 sm:py-52 transition-colors duration-300 bg-white dark:bg-dark-primary">
       <IntroComponent/>
       <CurrentOccupationComponent/>
-      <ProjectsComponent/>    
-
-      </main>
+      <ProjectsComponent size={4} title='Recent Projects' desc="Recent Projects I've been working on."/>    
+    </main>
   )
 }
 
-export default HomePage
+export default HomePageContent

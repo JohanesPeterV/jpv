@@ -16,19 +16,17 @@ export default function CurrentOccupationComponent() {
         <p className="max-w-xl mt-2 mb-10 mx-auto text-xs sm:text-lg text-light-text-secondary dark:text-dark-text-secondary">
           Teaching Assistant at Software Laboratory Center
         </p>
-        
+
         <a
           href="https://www.instagram.com/slcbinusuniv/"
           className="group rounded-2xl overflow-hidden relative w-2/3 border-4 border-light-text-primary dark:border-dark-text-primary"
         >
-
           <div className="px-2 flex justify-center items-center text-xs sm:text-l md:text-2xl color-transition duration-300 absolute z-50 w-full h-full opacity-0 group-hover:opacity-80  bg-light-primary dark:bg-dark-primary text-light-text-primary dark:text-dark-text-primary">
-                In Honesty and Hardwork, We Strive for Excellence
-            </div>
-
+            In Honesty and Hardwork, We Strive for Excellence
+          </div>
 
           <StaticImage
-            style={{position: "absolute"}}
+            style={{ position: "absolute" }}
             className="layer z-30 filter blur-none group-hover:blur-md"
             src="../assets/images/202.png"
             placeholder="dominantColor"
@@ -42,22 +40,21 @@ export default function CurrentOccupationComponent() {
           />
         </a>
       </div>
-      
+
       {/* {document.addEventListener("mousemove", parallax)} */}
       <script src="./parallax.js"></script>
     </div>
   );
 }
 function parallax(e) {
-  var container=document.getElementById('container');
-  var docs=document.getElementsByClassName('layer');
-  let len=docs.length;
-  const w=container.offsetWidth/1903;
-  const h=container.offsetHeight/986;
-  for(let i=0;i<len;i++) {
-    const x=(e.clientX*0.006*(i+1)-3.2*(i+1))*w;
-    const y=(e.clientY*0.006*(i+1))*h;
-    docs[i].style.transform=`translateX(${x}px) translateY(${y}px)`;
-    
-  };
+  var container = document.getElementById("container");
+  var docs = document.getElementsByClassName("layer");
+  let len = docs.length;
+  const w = container.offsetWidth / 1903;
+  const h = container.offsetHeight / 986;
+  for (let i = 0; i < len; i++) {
+    const x = (e.clientX * 0.006 * (i + 1) - 3.2 * (i + 1)) * w;
+    const y = e.clientY * 0.006 * (i + 1) * h;
+    docs[i].style.transform = `translateX(${x}px) translateY(${y}px)`;
+  }
 }

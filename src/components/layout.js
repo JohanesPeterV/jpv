@@ -8,9 +8,9 @@ export default function LayoutComponent(props) {
       <Helmet>
         <html lang="en"/>
         <title>Johanes Peter Vincentius</title>
-        <link rel="icon" href="/assets/image/darkjp.png" type="image/png"/>
+        <link rel="icon" href="/assets/darkjp.png" type="image/png"/>
       </Helmet>
-        <HeaderComponent/>
+        <HeaderComponent link={props.link} />
           {props.children}
         <FooterComponent/>
     </div>
