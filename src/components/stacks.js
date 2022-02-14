@@ -50,7 +50,7 @@ const stacks = [
   },
   // asp.net
   {
-    category: "Web",
+    category: "Front End",
     contents: [
       { name: "HTML, CSS, JS", link: "" },
       { name: "Angular", link: "https://angular.io/docs" },
@@ -66,15 +66,24 @@ const stacks = [
     ],
   },
   {
+    category: "Back End",
+    contents: [
+      { name: "Apollo Server", link: "https://www.apollographql.com/docs/apollo-server/#:~:text=Apollo%20Server%20is%20an%20open,use%20data%20from%20any%20source." },
+      { name: "Node.js", link: "https://nodejs.org/en/" },
+      { name: "Laravel", link: "https://laravel.com/" },
+    ],
+  },
+  {
     category: "Others",
     contents: [
+      { name: "GraphQL", link: "https://graphql.org/" },
+      { name: "Sequelize", link: "https://sequelize.org/" },
       { name: "Unity", link: "https://unity.com/" },
       {
         name: "Cisco Packet Tracer",
         link: "https://www.netacad.com/courses/packet-tracer",
       },
       { name: "Ubuntu Server", link: "https://ubuntu.com/server/docs" },
-      { name: "Node.js", link: "https://nodejs.org/en/" },
       { name: "Xampp", link: "https://www.apachefriends.org/index.html" },
       {
         name: "Android",
@@ -120,3 +129,4 @@ export default function StackComponent() {
     </div>
   );
 }
+
