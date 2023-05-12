@@ -48,7 +48,7 @@ const stacks = [
       { name: "PostgreSQL", link: "https://www.postgresql.org/" },
     ],
   },
-  // asp.net
+
   {
     category: "Front End",
     contents: [
@@ -61,6 +61,7 @@ const stacks = [
       },
       { name: "Semantic UI React", link: "https://react.semantic-ui.com/" },
       { name: "ASP.NET", link: "https://dotnet.microsoft.com/en-us/apps/aspnet" },
+      { name: "Blazor", link: "https://dotnet.microsoft.com/en-us/apps/aspnet/web-apps/blazor" },
       { name: "Next.js", link: "https://nextjs.org/" },
       { name: "Vue.js", link: "https://vuejs.org/" },
       { name: "Nuxt.js", link: "https://nuxtjs.org/" },
