@@ -1,6 +1,6 @@
 import React from "react"
 import IntroComponent from "../components/intro"
-import CurrentOccupationComponent from "./currento"
+import CurrentOccupationComponent from "./curr-occupation"
 import ProjectsComponent from "./projects"
 
 

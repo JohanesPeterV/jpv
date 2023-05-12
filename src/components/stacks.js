@@ -3,7 +3,7 @@ import StackSection from "./stacksection";
 
 const stacks = [
   {
-    category: "Programming",
+    category: "Programming Language",
     contents: [
       {
         name: "C",
@@ -60,31 +60,12 @@ const stacks = [
         link: "https://laravel.com/docs/8.x/installation#meet-laravel",
       },
       { name: "Semantic UI React", link: "https://react.semantic-ui.com/" },
+      { name: "ASP.NET", link: "https://dotnet.microsoft.com/en-us/apps/aspnet" },
+      { name: "Next.js", link: "https://nextjs.org/" },
+      { name: "Vue.js", link: "https://vuejs.org/" },
+      { name: "Nuxt.js", link: "https://nuxtjs.org/" },
       { name: "Bootstrap", link: "https://getbootstrap.com/" },
       { name: "Tailwind CSS", link: "https://tailwindcss.com/" },
-      { name: "Gatsby", link: "https://www.gatsbyjs.com/" },
-    ],
-  },
-  {
-    category: "Back End",
-    contents: [
-      { name: "Apollo Server", link: "https://www.apollographql.com/docs/apollo-server/#:~:text=Apollo%20Server%20is%20an%20open,use%20data%20from%20any%20source." },
-      { name: "Node.js", link: "https://nodejs.org/en/" },
-      { name: "Laravel", link: "https://laravel.com/" },
-    ],
-  },
-  {
-    category: "Others",
-    contents: [
-      { name: "GraphQL", link: "https://graphql.org/" },
-      { name: "Sequelize", link: "https://sequelize.org/" },
-      { name: "Unity", link: "https://unity.com/" },
-      {
-        name: "Cisco Packet Tracer",
-        link: "https://www.netacad.com/courses/packet-tracer",
-      },
-      { name: "Ubuntu Server", link: "https://ubuntu.com/server/docs" },
-      { name: "Xampp", link: "https://www.apachefriends.org/index.html" },
       {
         name: "Android",
         link: "https://developer.android.com/",
@@ -97,16 +78,18 @@ const stacks = [
         name: "Three JS",
         link: "https://threejs.org/docs/index.html#manual/en/introduction/Creating-a-scene",
       },
-      {
-        name: "Adobe Photoshop",
-        link: "https://www.adobe.com/sea/products/photoshop.html?sdid=12B9DXDJ&mv=search&ef_id=Cj0KCQjwtrSLBhCLARIsACh6RmjJ6Virn_0JHpLxMbT7u7jNRR_Ib-u4bCDOq_iaH7LL7ymElzdYFLUaAgg9EALw_wcB:G:s&s_kwcid=AL!3085!3!472466937532!e!!g!!photosho!11350284435!111298133196&gclid=Cj0KCQjwtrSLBhCLARIsACh6RmjJ6Virn_0JHpLxMbT7u7jNRR_Ib-u4bCDOq_iaH7LL7ymElzdYFLUaAgg9EALw_wcB",
-      },
-      {
-        name: "Adobe Premier Pro",
-        link: "https://www.adobe.com/sea/products/premiere.html?sdid=19SCDNXG&mv=search&ef_id=Cj0KCQjwtrSLBhCLARIsACh6RmjRstt3KcY5vpIT96TyizFoqn7aRc3mxi1exQ822Sdqqi_D-6OtjM4aAuryEALw_wcB:G:s&s_kwcid=AL!3085!3!424783761062!e!!g!!premiere%20pro!703952808!38400810458&gclid=Cj0KCQjwtrSLBhCLARIsACh6RmjRstt3KcY5vpIT96TyizFoqn7aRc3mxi1exQ822Sdqqi_D-6OtjM4aAuryEALw_wcB",
-      },
     ],
   },
+  {
+    category: "Back End",
+    contents: [
+      { name: "Apollo Server", link: "https://www.apollographql.com/docs/apollo-server/#:~:text=Apollo%20Server%20is%20an%20open,use%20data%20from%20any%20source." },
+      { name: "Node.js", link: "https://nodejs.org/en/" },
+      { name: "Nest.js", link: "https://nestjs.com/" },
+      { name: "Laravel", link: "https://laravel.com/" },
+      { name: "ASP.NET", link: "https://dotnet.microsoft.com/en-us/apps/aspnet" },
+    ],
+  }
 ];
 
 export default function StackComponent() {

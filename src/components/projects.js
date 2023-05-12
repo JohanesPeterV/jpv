@@ -1,9 +1,22 @@
 import React from "react";
 
 const projects = [
+  https://github.com/JohanesPeterV/simple-helpdesk
+  {
+    name: "Simple Helpdesk",
+    desc: "Helpdesk App, feature: ticketing system with email.",
+    stacks: ["Next.js", "Tailwind", "Prisma", "Postgresql"],
+    gitLink: "https://github.com/JohanesPeterV/MyUtangBackend",
+  },
+  {
+    name: "MyUtang Backend",
+    desc: "MyUtang Backend App, feature: login and manage debts between user.",
+    stacks: ["Apollo Server", "Graphql"],
+    gitLink: "https://github.com/JohanesPeterV/MyUtangBackend",
+  },
   {
     name: "JPV",
-    desc: "A website to tell about me and what can I do.",
+    desc: "My Porto Website.",
     stacks: ["React", "Gatsby", "Tailwind"],
     liveLink: "https://jpv.my.id",
     gitLink: "https://github.com/JopHme/jpv",

@@ -13,8 +13,8 @@ export default function CurrentOccupationComponent() {
           Current Occupation
         </p>
 
-        <p className="max-w-xl mt-2 mb-10 mx-auto text-xs sm:text-lg text-light-text-secondary dark:text-dark-text-secondary">
-          Teaching Assistant at Software Laboratory Center
+        <p className="max-w-xl mt-2 mb-10 mx-auto text-xs sm:text-lg text-light-text-primary dark:text-dark-text-primary">
+          Database Administrator at Software Laboratory Center
         </p>
 
         <a

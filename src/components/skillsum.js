@@ -9,7 +9,7 @@ export default function SkillSumComponent() {
             Stacks and Projects
           </p>
           <p className="max-w-xl mt-5 mx-auto text-xl transition-colors duration-300 text-light-text-secondary dark:text-dark-text-secondary">
-            Stacks I've learned and Projects I've done as an undergraduate, learner and Teaching Assistant.
+            Stacks I've have experience with.
           </p>
         </div>
       </div>
