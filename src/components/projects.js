@@ -1,7 +1,6 @@
 import React from "react";
 
 const projects = [
-  https://github.com/JohanesPeterV/simple-helpdesk
   {
     name: "Simple Helpdesk",
     desc: "Helpdesk App, feature: ticketing system with email.",
