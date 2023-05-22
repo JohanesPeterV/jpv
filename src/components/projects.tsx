@@ -82,9 +82,9 @@ const projects = [
   },
 ];
 
-export default function RecentProjectsComponent(props) {
+export default function Projects(props) {
   return (
-    <div className={"transition-colors duration-300 bg-white dark:bg-dark-primary "+(props.size<5?'py-24':'')} >
+    <div className={"transition-colors duration-300  "+(props.size<5?'py-24':'')} >
       <div className="mx-auto py-12 px-4 max-w-7xl sm:px-6 lg:px-8 lg:py-24">
         <div className="space-y-12">
           <div className="space-y-2 sm:space-y-1 xl:max-w-none">

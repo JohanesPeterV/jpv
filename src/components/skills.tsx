@@ -1,6 +1,6 @@
 import React from "react";
 import ProjectsComponent from "./projects";
-import SkillSumComponent from "./skillsum";
+import SkillSumComponent from "./skill-sum";
 import StackComponent from "./stacks";
 
 const SkillsPageContent = () => {

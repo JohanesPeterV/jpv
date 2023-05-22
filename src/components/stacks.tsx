@@ -1,5 +1,5 @@
 import React from "react";
-import StackSection from "./stacksection";
+import StackSection from "./stack-section";
 
 const stacks = [
   {

@@ -1,7 +1,7 @@
 import { StaticImage } from "gatsby-plugin-image";
 import React from "react";
 
-export default function CurrentOccupationComponent() {
+export default function CurrentOccupation() {
   return (
     <div
       onMouseMove={parallax}
@@ -46,10 +46,11 @@ export default function CurrentOccupationComponent() {
     </div>
   );
 }
-function parallax(e) {
+function parallax(e): void {
   var container = document.getElementById("container");
-  var docs = document.getElementsByClassName("layer");
+  var docs = document.querySelectorAll<HTMLElement>('.layer');
   let len = docs.length;
+  if (container === null) return;
   const w = container.offsetWidth / 1903;
   const h = container.offsetHeight / 986;
   for (let i = 0; i < len; i++) {

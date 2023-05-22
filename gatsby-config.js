@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
-    title: "jp",
+    siteUrl: "https://jpv.my.id",
+    title: "jpv",
   },
   plugins: [
   `gatsby-plugin-postcss`, 
