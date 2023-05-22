@@ -1,6 +1,6 @@
 import React from "react"
 import Intro from "./intro"
-import WorkExperience from "./curr-occupation"
+import WorkExperience from "./work-experience"
 import Projects from "./projects"
 
 

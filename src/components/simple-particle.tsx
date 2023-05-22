@@ -70,7 +70,7 @@ function getParticleOptions(darkTheme: boolean): ISourceOptions {
       },
     },
     interactivity: {
-      detect_on: "canvas",
+      detect_on: "window",
       events: {
         onhover: {
           enable: true,
@@ -146,8 +146,8 @@ const SimpleParticle: FunctionComponent<HTMLAttributes<HTMLDivElement>> = ({
       init={particlesInit}
       loaded={particlesLoaded}
       options={getParticleOptions(enabled)}
-      canvasClassName="z-neg-10"
-      className="z-neg-10"
+      canvasClassName="-z-10"
+      className="-z-10"
     />
   );
 };

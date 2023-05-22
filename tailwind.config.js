@@ -3,9 +3,6 @@ module.exports = {
   darkMode: "class", // or 'media' or 'class'
   theme: {
     extend: {
-      zIndex:{
-        'neg-10':-10
-      },
       colors: {
         dark: {
           primary: "#121212",
