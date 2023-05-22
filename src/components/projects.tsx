@@ -72,7 +72,7 @@ export default function Projects(props) {
   return (
     <div
       className={
-        "h-screen min-h-screen flex justify-center transition-colors duration-300 " +
+        "min-h-screen flex justify-center transition-colors duration-300 " +
         (props.size < 5 ? "py-24" : "")
       }
     >
