@@ -3,7 +3,7 @@ import React from "react";
 const projects = [
   {
     name: "Simple Helpdesk",
-    desc: "Helpdesk App, feature: ticketing system with email.",
+    desc: "Helpdesk App, which features ticketing system with email.",
     stacks: ["Next.js", "Tailwind", "Prisma", "Postgresql"],
     gitLink: "https://github.com/JohanesPeterV/MyUtangBackend",
   },
@@ -21,14 +21,6 @@ const projects = [
     gitLink: "https://github.com/JopHme/jpv",
   },
   {
-    name: "Phat",
-    desc: "A discord bot that focuses on utilizing many APIs.",
-    stacks: ["Node JS"],
-    liveLink:
-      "https://discord.com/api/oauth2/authorize?client_id=865210147822764052&permissions=8&scope=bot",
-    gitLink: "https://github.com/JopHme/phat",
-  },
-  {
     name: "SpaceShooter 202",
     desc: "A Brick shooting game made using html5 canvas and javascript",
     stacks: ["HTML", "Canvas", "CSS", "JavaScript"],
@@ -36,24 +28,18 @@ const projects = [
     gitLink: "https://github.com/JopHme/SpaceDefender202",
   },
 
-  {
-    name: "JP Keyboard",
-    desc: "A database case I created for Database Training.",
-    stacks: ["SQL Server"],
-    gitLink: "https://github.com/JopHme/jpkeyboarddb",
-  },
 
-  {
-    name: "JP Automata",
-    desc: "Inspired from nier automata, implemented AStar Algorithm.",
-    stacks: ["C++"],
-    gitLink: "https://github.com/JopHme/JP-Automata",
-  },
   {
     name: "Chantuy",
     desc: "An android forum based application for people to share their thoughts.",
     stacks: ["Android", "Kotlin", "Firebase"],
     gitLink: "https://github.com/JopHme/chantuy-app",
+  },
+  {
+    name: "JP Automata",
+    desc: "Inspired from nier automata, implemented AStar Algorithm.",
+    stacks: ["C++"],
+    gitLink: "https://github.com/JopHme/JP-Automata",
   },
   {
     name: "JPToDoList",
@@ -84,28 +70,23 @@ const projects = [
 
 export default function Projects(props) {
   return (
-    <div className={"transition-colors duration-300  "+(props.size<5?'py-24':'')} >
-      <div className="mx-auto py-12 px-4 max-w-7xl sm:px-6 lg:px-8 lg:py-24">
+    <div
+      className={
+        "h-screen min-h-screen flex justify-center transition-colors duration-300 " +
+        (props.size < 5 ? "py-24" : "")
+      }
+    >
+      <div className="mx-auto flex justify-center items-center px-4 max-w-7xl sm:px-6 lg:px-8 ">
         <div className="space-y-12">
           <div className="space-y-2 sm:space-y-1 xl:max-w-none">
             <p className="transition-all duration-300 mt-1 text-light-text-primary dark:text-dark-text-primary text-3xl font-bold pt-2 sm:pt-0 sm:tracking-tight md:text-3xl lg:text-4xl text-center">
               {props.title}
             </p>
-            <p className="text-xl text-gray-500 text-center transition-all duration-300 text-light-text-secondary dark:text-dark-text-secondary">
-              {props.desc}
-            </p>
-            {/* <h2 className="text-3xl font-extrabold transition-all duration-300 text-light-text-primary dark:text-dark-text-primary tracking-tight sm:text-4xl text-center">
-
-              {props.title}
-            </h2>
-            <p className="text-xl text-gray-500 text-center transition-all duration-300 text-light-text-secondary dark:text-dark-text-secondary">
-              {props.desc}
-            </p> */}
           </div>
-          <ul className="space-y-12 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:grid-cols-4 lg:gap-x-8">
+          <ul className="space-y-12 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:grid-cols-3 lg:gap-x-8">
             {projects.slice(0, props.size).map((project) => (
-              <li key={project.name}>
-                <div className="space-y-4 p-4 border transition-color border-light-text-primary dark:border-dark-text-primary duration-300 transform hover:bg-light-card dark:hover:bg-dark-card bg-light-primary dark:bg-dark-primary rounded-xl">
+              <li key={project.name} >
+                <div className="space-y-4 p-4 border transition-color shadow-md duration-300 transform hover:shadow-xl bg-light-primary dark:bg-dark-primary bg-opacity-80 rounded-xl">
                   <div className="space-y-2">
                     <div className="text-lg leading-6 font-medium space-y-1">
                       <h2 className="text-lg transition-all duration-300 text-light-text-primary dark:text-dark-text-primary">
@@ -116,6 +97,13 @@ export default function Projects(props) {
                         {project.desc}
                       </p>
                     </div>
+                    <ul className="flex flex-wrap">
+                      {project.stacks.slice(0, project.stacks.length).map((stack) => (
+                        <li className="bg-light-secondary h-min rounded-xl px-2 py-0.5 mr-1 mb-2">
+                          {stack}
+                        </li>
+                      ))}
+                    </ul>
                     <ul className="h-12  flex space-x-5">
                       <li>
                         <a
@@ -155,26 +143,6 @@ export default function Projects(props) {
                         ) : (
                           <></>
                         )}
-                      </li>
-                      <li>
-                        {/*   <a
-                            href={project.linkedinUrl}
-                            className="text-gray-400 hover:text-gray-500"
-                          >
-                            <span className="sr-only">LinkedIn</span>
-                            <svg
-                              className="w-5 h-5"
-                              aria-hidden="true"
-                              fill="currentColor"
-                              viewBox="0 0 20 20"
-                            >
-                              <path
-                                fillRule="evenodd"
-                                d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z"
-                                clipRule="evenodd"
-                              />
-                            </svg>
-                          </a> */}
                       </li>
                     </ul>
                   </div>

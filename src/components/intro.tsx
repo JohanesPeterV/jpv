@@ -25,7 +25,7 @@ export default function Intro() {
   }, []);
   return (
     <div id="intro" className="snap-y min-h-screen transition-position flex flex-col justify-center transition-colors duration-300 ">
-      <div className="transition-position duration-300 max-w-8xl flex flex-col sm:flex-row sm:space-x-6 md:space-x-8 lg:space-x-8 items-center sm:items-start justify-center mx-auto px-4 sm:px-6 lg:px-8">
+      <div id="intro-card" className="transition-position duration-300 max-w-8xl flex flex-col sm:flex-row sm:space-x-6 md:space-x-8 lg:space-x-8 items-center sm:items-start justify-center mx-auto px-4 sm:px-6 lg:px-8">
         <StaticImage
           className="rounded-full w-24 h-24 sm:w-44 sm:h-44 "
           src="../assets/images/jp.png"
@@ -43,13 +43,13 @@ export default function Intro() {
           </div>
           <hr className="border-light-text-primary dark:border-dark-text-primary border-t-2" />
           <p className="transition-colors duration-300 mt-5 max-w-xs sm:max-w-full sm:w-full flex text-light-text-primary dark:text-dark-text-primary mx-auto text-md sm:text-xl">
-            Proficient in&nbsp;
+            Experienced in&nbsp;
             <TextTransition springConfig={presets.default}>
               {TYPES[index]}
             </TextTransition>
           </p>
 
-          <ReferenceComponent className="justify-start" large={true} />
+          <ReferenceComponent className="justify-center sm:justify-start" large={true} />
         </div>
       </div>
     </div>

@@ -9,7 +9,7 @@ export default function StackSection(props) {
     <div className="flex flex-col justify-center pb-6">
       <button
         onClick={toggleDropDown}
-        className="pb-4 transition-all transition-color duration-300 text-light-text-primary dark:text-dark-text-primary hover:text-indigo-400 dark:hover:text-indigo-400 text-center duration-300 mt-1 text-xl font-bold sm:text-xl sm:tracking-tight md:text-2xl lg:text-3xl z-30"
+        className="pb-4 transition-all transition-color text-light-text-primary dark:text-dark-text-primary hover:text-indigo-400 dark:hover:text-indigo-400 text-center duration-300 mt-1 text-xl font-bold sm:text-xl sm:tracking-tight md:text-2xl lg:text-3xl z-30"
       >
         {props.title}
       </button>

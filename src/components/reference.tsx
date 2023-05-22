@@ -69,11 +69,11 @@ const navigation = {
     },
   ],
 };
-export default function ReferenceComponent(props: { center: boolean, large:boolean }) {
+export default function ReferenceComponent(props: { className: string, large:boolean }) {
   return (
     <div
       className={
-        `flex flex-wrap flex-row items-center space-x-6 md:order-2 ${props.center?'justify-center':'justify-start'}` 
+        `flex flex-wrap flex-row items-center space-x-6 md:order-2 ${props.className}` 
       }
     >
       {navigation.social.map((item) => (
@@ -84,7 +84,7 @@ export default function ReferenceComponent(props: { center: boolean, large:boole
         >
           <span className="sr-only">{item.name}</span>
           <item.icon
-            className={props.large ? "h-8 w-8 sm:h-10 sm:w-10" : "h-6 h-6"}
+            className={props.large ? "h-8 w-8 sm:h-10 sm:w-10" : "h-6 w-6"}
             aria-hidden="true"
           />
         </a>

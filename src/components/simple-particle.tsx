@@ -4,26 +4,25 @@ import { FunctionComponent } from "react";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 import { ISourceOptions } from "tsparticles-engine";
-import { useAtom } from 'jotai';
-import { darkThemeAtom } from '../constants/dark-theme-atom';
+import { useAtom } from "jotai";
+import { darkThemeAtom } from "../constants/dark-theme-atom";
 
-
-function  getParticleOptions(darkTheme:boolean): ISourceOptions {
+function getParticleOptions(darkTheme: boolean): ISourceOptions {
   return {
     particles: {
       number: {
-        value: 20,
+        value: 40,
         density: {
           enable: true,
           value_area: 700,
         },
-        max:20
+        max: 40,
       },
       color: {
-        value: darkTheme?"#FFFFFF":"#000000",
+        value: darkTheme ? "#FFFFFF" : "#000000",
       },
       shape: {
-        type: 'circle',
+        type: "circle",
         polygon: {
           nb_sides: 5,
         },
@@ -40,28 +39,28 @@ function  getParticleOptions(darkTheme:boolean): ISourceOptions {
       },
       size: {
         value: {
-          min:4,
-          max:14
+          min: 4,
+          max: 14,
         },
         random: true,
       },
       line_linked: {
-        enable: true,
+        enable: false,
         distance: 80,
-        color: darkTheme?"#FFFFFF":"#000000",
+        color: darkTheme ? "#FFFFFF" : "#000000",
         opacity: 0.4,
         width: 1,
       },
       move: {
         enable: true,
         speed: {
-          min:0.2,
-          max:2
+          min: 0.3,
+          max: 2.2,
         },
-        direction: 'top',
+        direction: "top",
         random: true,
         straight: true,
-        out_mode: 'out',
+        out_mode: "out",
         bounce: false,
         attract: {
           enable: false,
@@ -71,15 +70,21 @@ function  getParticleOptions(darkTheme:boolean): ISourceOptions {
       },
     },
     interactivity: {
-      detect_on: 'canvas',
+      detect_on: "canvas",
       events: {
         onhover: {
           enable: true,
-          mode: 'grab',
+          mode: "grab",
         },
         onclick: {
           enable: true,
-          mode: 'push',
+          mode: "push",
+        },
+        onDiv: {
+          selectors: ["#intro-card"],
+          enable: true,
+          mode: "repulse",
+          type: "circle"
         },
         resize: true,
       },
@@ -95,10 +100,18 @@ function  getParticleOptions(darkTheme:boolean): ISourceOptions {
           duration: 4,
           opacity: 0.8,
         },
-        repulse: {
-          distance: 200,
-          duration: 0.4,
-        },
+        // repulse: {
+          //   random: {
+          //     enable: false,
+          //     minimumValue: 0
+          //   },
+          //   value: 0,
+          //   enabled: false,
+          //   distance: 1,
+          //   duration: 1,
+          //   factor: 1,
+          //   speed: 1
+          // },
         push: {
           particles_nb: 4,
           quantity: 1,
@@ -110,13 +123,13 @@ function  getParticleOptions(darkTheme:boolean): ISourceOptions {
     },
     background: {
       color: {
-        value: '#0284c7',
+        value: "#0284c7",
       },
       opacity: 0,
     },
     retina_detect: true,
   };
-} 
+}
 
 const SimpleParticle: FunctionComponent<HTMLAttributes<HTMLDivElement>> = ({
   className,
@@ -125,10 +138,8 @@ const SimpleParticle: FunctionComponent<HTMLAttributes<HTMLDivElement>> = ({
   const particlesInit = useCallback(async (engine) => {
     await loadFull(engine);
   }, []);
-  const particlesLoaded = useCallback(async (container) => {
-    await console.log(container);
-  }, []);
-  
+  const particlesLoaded = useCallback(async () => {}, []);
+
   return (
     <Particles
       id="tsparticles"

@@ -11,23 +11,25 @@ module.exports = {
           primary: "#121212",
           secondary: "#1f1f1f",
           card: "#1c1e20",
-          indigo: {
-            trans: "#252731",
-          },
           "text-primary": "#dadada",
           "text-secondary": "#878787",
           "text-third": "#70747b",
+          text:{
+            primary: "#dadada",
+            secondary: "#878787",
+            third: "#70747b",
+          }
+
         },
         light: {
           primary: "#ffffff",
           secondary: "#e8eaeb",
           card: "#ebedef",
-          indigo: {
-            trans: "#f6f7ff",
-          },
-          "text-primary": "#060607",
-          "text-secondary": "#6b7480",
-          "text-third": "#838c98",
+          text:{
+            primary: "#060607",
+            secondary: "#6b7480",
+            third: "#838c98",
+          }
         },
       },
 
