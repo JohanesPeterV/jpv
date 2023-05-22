@@ -86,7 +86,7 @@ export default function Projects(props) {
           <ul className="space-y-12 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:grid-cols-3 lg:gap-x-8">
             {projects.slice(0, props.size).map((project) => (
               <li key={project.name} >
-                <div className="space-y-4 p-4 border transition-color shadow-md duration-300 transform hover:shadow-xl bg-light-primary dark:bg-dark-primary bg-opacity-80 rounded-xl">
+                <div className="space-y-4 p-4 transition-color shadow-md duration-300 transform hover:shadow-xl dark:bg-opacity-80 bg-light-primary dark:bg-dark-primary dark:shadow-dark-primary  bg-opacity-80 rounded-xl">
                   <div className="space-y-2">
                     <div className="text-lg leading-6 font-medium space-y-1">
                       <h2 className="text-lg transition-all duration-300 text-light-text-primary dark:text-dark-text-primary">
@@ -99,7 +99,7 @@ export default function Projects(props) {
                     </div>
                     <ul className="flex flex-wrap">
                       {project.stacks.slice(0, project.stacks.length).map((stack) => (
-                        <li className="bg-light-secondary h-min rounded-xl px-2 py-0.5 mr-1 mb-2">
+                        <li className="bg-light-secondary dark:bg-dark-secondary dark:text-dark-text-primary text-light-text-primary h-min rounded-xl px-2 py-0.5 mr-1 mb-2">
                           {stack}
                         </li>
                       ))}
