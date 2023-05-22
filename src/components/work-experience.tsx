@@ -49,7 +49,7 @@ export default function WorkExperience() {
       className="min-h-screen py-72 lg:py-8 md:py-16 z-50"
     >
       <div className="space-y-4 flex flex-col items-center max-w-7xl mx-auto py-16 px-4 text-center sm:py-24 sm:px-6 lg:px-8">
-        <p className="transition-all duration-300 mt-1 text-light-text-primary dark:text-dark-text-primary text-2xl font-bold sm:text-2xl sm:tracking-tight md:text-3xl lg:text-5xl  pb-2">
+        <p className="transition-all duration-300 mt-1 text-light-text-primary dark:text-dark-text-primary text-2xl font-semibold sm:text-2xl sm:tracking-tight md:text-3xl lg:text-5xl  pb-2">
           Work Experience
         </p>
         {workExperienceList.map((workExperience) => (

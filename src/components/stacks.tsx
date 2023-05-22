@@ -3,13 +3,12 @@ import StackSection from "./stack-section";
 
 const stacks = [
   {
-    category: "Programming Language",
+    category: "Programming",
     contents: [
       {
-        name: "C",
-        link: "https://en.wikipedia.org/wiki/C_(programming_language)",
+        name: "C/C++",
+        link: "https://en.wikipedia.org/wiki/C%2B%2B",
       },
-      { name: "C++", link: "https://en.wikipedia.org/wiki/C%2B%2B" },
       {
         name: "C#",
         link: "https://docs.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/",
@@ -60,8 +59,14 @@ const stacks = [
         link: "https://laravel.com/docs/8.x/installation#meet-laravel",
       },
       { name: "Semantic UI React", link: "https://react.semantic-ui.com/" },
-      { name: "ASP.NET", link: "https://dotnet.microsoft.com/en-us/apps/aspnet" },
-      { name: "Blazor", link: "https://dotnet.microsoft.com/en-us/apps/aspnet/web-apps/blazor" },
+      {
+        name: "ASP.NET",
+        link: "https://dotnet.microsoft.com/en-us/apps/aspnet",
+      },
+      {
+        name: "Blazor",
+        link: "https://dotnet.microsoft.com/en-us/apps/aspnet/web-apps/blazor",
+      },
       { name: "Next.js", link: "https://nextjs.org/" },
       { name: "Vue.js", link: "https://vuejs.org/" },
       { name: "Nuxt.js", link: "https://nuxtjs.org/" },
@@ -84,33 +89,48 @@ const stacks = [
   {
     category: "Back End",
     contents: [
-      { name: "Apollo Server", link: "https://www.apollographql.com/docs/apollo-server/#:~:text=Apollo%20Server%20is%20an%20open,use%20data%20from%20any%20source." },
+      {
+        name: "Apollo Server",
+        link: "https://www.apollographql.com/docs/apollo-server/#:~:text=Apollo%20Server%20is%20an%20open,use%20data%20from%20any%20source.",
+      },
       { name: "Node.js", link: "https://nodejs.org/en/" },
       { name: "Nest.js", link: "https://nestjs.com/" },
       { name: "Laravel", link: "https://laravel.com/" },
-      { name: "ASP.NET", link: "https://dotnet.microsoft.com/en-us/apps/aspnet" },
+      {
+        name: "ASP.NET",
+        link: "https://dotnet.microsoft.com/en-us/apps/aspnet",
+      },
     ],
-  }
+  },
+  {
+    category: "Cloud",
+    contents: [
+      {
+        name: "Heroku",
+        link: "https://www.heroku.com/",
+      },
+      { name: "Netlify", link: "https://www.netlify.com/" },
+      { name: "Firebase", link: "https://firebase.google.com/" },
+    ],
+  },
 ];
 
 export default function StackComponent() {
   return (
     <div
       id="container"
-      className="transition-colors duration-300 bg-light-secondary dark:bg-dark-secondary py-72 lg:py-8 md:py-16"
+      className="flex flex-col items-center justify-center transition-colors duration-300 bg-light-secondary dark:bg-dark-secondary py-72 lg:py-8 md:py-16"
     >
-      <div className="flex mb-4 flex-col items-center max-w-7xl mx-auto pt-16 px-4 text-center sm:pt-24 sm:px-6 lg:px-8">
-        <p className="transition-all duration-300 mt-1 text-light-text-primary dark:text-dark-text-primary text-2xl font-bold sm:text-2xl sm:tracking-tight md:text-3xl lg:text-4xl ">
-          Skill Stacks
+      <div className="flex mb-4 md:mb-16 flex-col items-center max-w-7xl mx-auto pt-16 px-4 text-center sm:pt-24 sm:px-6 lg:px-8">
+        <p className="transition-all duration-300 mt-1 text-light-text-primary dark:text-dark-text-primary text-2xl font-semibold sm:text-2xl sm:tracking-tight md:text-3xl lg:text-5xl ">
+          Technology Stacks
         </p>
-        {/* <p className="max-w-xl mt-2 mx-auto text-xs sm:text-lg text-light-text-secondary dark:text-dark-text-secondary">
-          Technology Stacks I've learned
-        </p> */}
       </div>
-      {stacks.map((stack) => (
-        <StackSection contents={stack.contents} title={stack.category} />
-      ))}
+      <div className="flex mb-2 md:mb-0  justify-center items-start flex-wrap w-3/5">
+          {stacks.map((stack) => (
+            <StackSection contents={stack.contents} title={stack.category} />
+          ))}
+      </div>
     </div>
   );
 }
-

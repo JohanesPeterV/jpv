@@ -20,6 +20,7 @@ function getParticleOptions(darkTheme: boolean): ISourceOptions {
       },
       color: {
         value: darkTheme ? "#FFFFFF" : "#000000",
+        
       },
       shape: {
         type: "circle",
@@ -28,7 +29,7 @@ function getParticleOptions(darkTheme: boolean): ISourceOptions {
         },
       },
       opacity: {
-        value: 0.4,
+        value: 0.1,
         random: false,
         anim: {
           enable: false,
