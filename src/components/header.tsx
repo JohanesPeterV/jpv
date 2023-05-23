@@ -15,24 +15,24 @@ function classNames(...classes) {
 export default function HeaderComponent(props) {
   const [enabled, setEnabled] = useAtom(darkThemeAtom);
   useEffect(() => {
-    setEnabled(localStorage.theme === "dark" ||
-    (!("theme" in localStorage) &&
-      window.matchMedia("(prefers-color-scheme: dark)").matches));
+    setEnabled(
+      localStorage.theme === "dark" ||
+        (!("theme" in localStorage) &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches)
+    );
   }, []);
-  const htmlElement: HTMLHtmlElement | null = document.querySelector("html");
-  if (enabled && htmlElement != null && htmlElement?.classList != null) {
-    htmlElement.classList.add("dark");
+  if (document !== null) {
+    const htmlElement: HTMLHtmlElement | null = document.querySelector("html");
+    if (enabled && htmlElement != null && htmlElement?.classList != null) {
+      htmlElement.classList.add("dark");
+    }
   }
   return (
-    <Disclosure
-      as="nav"
-      className="transition-colors duration-300"
-    >
+    <Disclosure as="nav" className="transition-colors duration-300">
       {({ open }) => (
         <>
           <div className="mx-auto px-2 sm:px-6 lg:px-8 xl:px-24 fixed right-0 pt-4">
             <div className="relative flex justify-between h-16">
-              
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                 <Switch.Group as="div" className="flex items-center space-x-3">
                   <Switch.Label as="span" className="ml-3">
@@ -110,13 +110,13 @@ export default function HeaderComponent(props) {
                           fill="currentColor"
                           viewBox="0 0 12 12"
                         >
-                        <path
-                          d="M4 8l2-2m0 0l2-2M6 6L4 4m2 2l2 2"
-                          stroke="currentColor"
-                          strokeWidth={2}
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
+                          <path
+                            d="M4 8l2-2m0 0l2-2M6 6L4 4m2 2l2 2"
+                            stroke="currentColor"
+                            strokeWidth={2}
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
                         </svg>
                       </span>
                     </span>
@@ -125,7 +125,6 @@ export default function HeaderComponent(props) {
               </div>
             </div>
           </div>
-
         </>
       )}
     </Disclosure>
