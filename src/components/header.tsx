@@ -21,7 +21,7 @@ export default function HeaderComponent(props) {
           window.matchMedia("(prefers-color-scheme: dark)").matches)
     );
   }, []);
-  if (document !== null) {
+  if (document) {
     const htmlElement: HTMLHtmlElement | null = document.querySelector("html");
     if (enabled && htmlElement != null && htmlElement?.classList != null) {
       htmlElement.classList.add("dark");
