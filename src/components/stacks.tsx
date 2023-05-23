@@ -119,7 +119,7 @@ export default function StackComponent() {
   return (
     <div
       id="container"
-      className="flex flex-col items-center justify-center transition-colors duration-300 bg-light-secondary dark:bg-dark-secondary py-72 lg:py-8 md:py-16"
+      className="flex flex-col items-center justify-center transition-colors duration-300  py-72 lg:py-8 md:py-16"
     >
       <div className="flex mb-4 md:mb-16 flex-col items-center max-w-7xl mx-auto pt-16 px-4 text-center sm:pt-24 sm:px-6 lg:px-8">
         <p className="transition-all duration-300 mt-1 text-light-text-primary dark:text-dark-text-primary text-2xl font-semibold sm:text-2xl sm:tracking-tight md:text-3xl lg:text-5xl ">
