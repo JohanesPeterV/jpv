@@ -13,7 +13,7 @@ export default function LayoutComponent(props) {
       </Helmet>
 
       <SimpleParticle />
-      <div className="bg-light-secondary dark:bg-dark-secondary">
+      <div className="bg-light-primary dark:bg-dark-secondary">
         <HeaderComponent link={props.link} />
 
         {props.children}
