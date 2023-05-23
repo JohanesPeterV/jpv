@@ -48,12 +48,12 @@ export default function Intro() {
             </p>
           </div>
           <hr className="border-light-text-primary dark:border-dark-text-primary border-t-2" />
-          <p className="transition-colors duration-300 mt-5 max-w-xs sm:max-w-full sm:w-full flex text-light-text-primary dark:text-dark-text-primary mx-auto text-md sm:text-xl">
+          <div className="transition-colors duration-300 mt-5 max-w-xs sm:max-w-full sm:w-full flex text-light-text-primary dark:text-dark-text-primary mx-auto text-md sm:text-xl">
             Experienced in&nbsp;
             <TextTransition springConfig={presets.default}>
               {TYPES[index]}
             </TextTransition>
-          </p>
+          </div>
 
           <ReferenceComponent
             className="justify-center sm:justify-start"
