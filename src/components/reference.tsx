@@ -56,7 +56,7 @@ const navigation = {
     },
     {
       name: "CV",
-      href: "https://www.linkedin.com/in/johanes-peter-714b311a4/",
+      href: "https://drive.google.com/file/d/1-CWMgTNX8GPUdc2_FnOuU4OVsA-k7gUd/view?usp=sharing",
       icon: (props) => (
         <svg fill="currentColor" viewBox="0 0 384 512" {...props}>
           <path
