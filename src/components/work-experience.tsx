@@ -11,7 +11,7 @@ const workExperienceList = [
     },
     roles: [
       {
-        title: "Database Administrator at Software Laboratory Center",
+        title: "Database Administrator",
         description: `While being a Database Administrator, 
         I am tasked to maintain the database that supports 
         operations around Software Laboratory Center and carry 
@@ -26,7 +26,7 @@ const workExperienceList = [
         },
       },
       {
-        title: "Teaching Assistant at Software Laboratory Center",
+        title: "Teaching Assistant",
         description: `While being a Teaching Assistant, 
         I am tasked to teach students in
         programming-based practicum subjects,
@@ -48,14 +48,14 @@ export default function WorkExperience() {
       id="container"
       className="min-h-screen py-72 lg:py-8 md:py-16 z-50"
     >
-      <div className="space-y-4 flex flex-col items-center max-w-7xl mx-auto py-16 px-4 text-center sm:py-24 sm:px-6 lg:px-8">
-        <p className="transition-all duration-300 mt-1 text-light-text-primary dark:text-dark-text-primary text-2xl font-semibold sm:text-2xl sm:tracking-tight md:text-3xl lg:text-5xl  pb-2">
+      <div className="space-y-4 flex flex-col items-center max-w-7xl mx-auto py-16 px-4 text-center sm:py-24 sm:px-4 lg:px-8">
+        <p className="transition-all duration-300 mt-1 text-light-text-primary dark:text-dark-text-primary font-semibold sm:tracking-tight text-3xl lg:pb-2 lg:text-5xl">
           Work Experience
         </p>
         {workExperienceList.map((workExperience) => (
           <div className="space-y-4 flex flex-col items-center ">
             <div className="flex flex-col justify-between mb-1 space-y-3">
-              <h1 className="transition-all duration-300 text-light-text-primary dark:text-dark-text-primary text-3xl font-semibold">
+              <h1 className="transition-all duration-300 text-light-text-primary dark:text-dark-text-primary text-2xl lg:text-3xl font-semibold">
                 {workExperience.place}
               </h1>
 
@@ -65,8 +65,8 @@ export default function WorkExperience() {
             </div>
 
             {workExperience.roles.map((role) => (
-              <div className="w-2/3 pb-6 pt-4 px-8 transition-color shadow-md duration-300 transform hover:shadow-xl dark:bg-opacity-80 bg-light-primary dark:bg-dark-primary dark:shadow-dark-primary  bg-opacity-80 rounded-xl">
-                <div className="flex flex-row justify-between text-xl mb-1 font-semibold">
+              <div className="w-4/5 lg:w-2/3 pb-6 pt-4 px-4 md:px-8 transition-color shadow-md duration-300 transform hover:shadow-xl dark:bg-opacity-80 bg-light-primary dark:bg-dark-primary dark:shadow-dark-primary  bg-opacity-80 rounded-xl">
+                <div className="flex flex-row justify-between text-sm md:text-md lg:text-xl mb-1 font-semibold">
                   <h1 className="transition-all duration-300 text-light-text-primary dark:text-dark-text-primary">
                     {role.title}
                   </h1>
@@ -76,7 +76,7 @@ export default function WorkExperience() {
                   </h1>
                 </div>
                 <div className="flex items-stretch justify-between space-x-3"></div>
-                <p className="transition-all duration-300 text-light-text-secondary dark:text-dark-text-secondary text-md text-left">
+                <p className="transition-all duration-300 text-light-text-secondary dark:text-dark-text-primary text-sm md:text-md text-left">
                   {role.description}
                 </p>
               </div>
@@ -86,7 +86,7 @@ export default function WorkExperience() {
 
         <a
           href="https://www.instagram.com/slcbinusuniv/"
-          className="group rounded-2xl overflow-hidden relative w-2/3 border-4 border-light-text-primary dark:border-dark-text-primary"
+          className="group rounded-2xl overflow-hidden relative w-4/5 lg:w-2/3 border-4 border-light-text-primary dark:border-dark-text-primary"
         >
           <div className="px-2 flex justify-center items-center text-xs sm:text-l md:text-2xl color-transition duration-300 absolute z-50 w-full h-full opacity-0 group-hover:opacity-80  bg-light-primary dark:bg-dark-primary text-light-text-primary dark:text-dark-text-primary">
             In Honesty and Hardwork, We Strive for Excellence

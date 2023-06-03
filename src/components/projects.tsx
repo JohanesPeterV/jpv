@@ -79,7 +79,7 @@ export default function Projects(props) {
       <div className="mx-auto flex justify-center items-center px-4 max-w-7xl sm:px-6 lg:px-8 ">
         <div className="space-y-12">
           <div className="space-y-2 sm:space-y-1 xl:max-w-none">
-            <p className="transition-all duration-300 mt-1 text-light-text-primary dark:text-dark-text-primary text-3xl font-semibold pt-2 sm:pt-0 sm:tracking-tight md:text-3xl lg:text-5xl text-center">
+            <p className="transition-all duration-300 mt-1 text-light-text-primary dark:text-dark-text-primary text-3xl font-semibold pt-2 sm:pt-0 sm:tracking-tight lg:text-5xl text-center">
               {props.title}
             </p>
           </div>

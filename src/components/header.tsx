@@ -31,14 +31,11 @@ export default function HeaderComponent(props) {
     <Disclosure as="nav" className="transition-colors duration-300">
       {({ open }) => (
         <>
-          <div className="mx-auto px-2 sm:px-6 lg:px-8 xl:px-24 fixed right-0 pt-4">
+          <div className="mx-auto px-2 sm:px-6 lg:px-8 xl:px-24 fixed z-30 right-0 pt-4">
             <div className="relative flex justify-between h-16">
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                 <Switch.Group as="div" className="flex items-center space-x-3">
                   <Switch.Label as="span" className="ml-3">
-                    <span className="text-sm font-medium text-gray-900 invisible sm:visible dark:text-gray-300">
-                      Dark Mode
-                    </span>
                   </Switch.Label>
 
                   <Switch
