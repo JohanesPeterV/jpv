@@ -145,7 +145,6 @@ const SimpleParticle: FunctionComponent<HTMLAttributes<HTMLDivElement>> = ({
     <Particles
       id="tsparticles"
       init={particlesInit}
-      loaded={particlesLoaded}
       options={getParticleOptions(enabled)}
       canvasClassName="-z-10"
       className="-z-10"

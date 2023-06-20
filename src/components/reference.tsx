@@ -43,7 +43,8 @@ const navigation = {
     },
     {
       name: "Linkedin",
-      href: "https://www.linkedin.com/in/johanes-peter-714b311a4/",
+            
+      href: "https://www.linkedin.com/in/johanes-vincentius-714b311a4",
       icon: (props) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path
