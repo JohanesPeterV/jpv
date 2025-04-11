@@ -1,54 +1,87 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby minimal starter
-</h1>
+# JP Portfolio Website
 
-## 🚀 Quick start
+A modern, responsive portfolio website built with Gatsby, React, and TypeScript.
 
-1.  **Create a Gatsby site.**
+## 🚀 Features
 
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
+- Built with Gatsby for optimal performance
+- TypeScript for type safety
+- Tailwind CSS for styling
+- Responsive design
+- Modern UI components
+- Interactive animations with tsparticles
+- Dark mode support
 
-    ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
-    ```
+## 🛠️ Tech Stack
 
-2.  **Start developing.**
+- **Framework**: Gatsby
+- **Language**: TypeScript
+- **UI Library**: React
+- **Styling**: Tailwind CSS
+- **State Management**: Jotai
+- **UI Components**: Headless UI
+- **Animations**: tsparticles
+- **Icons**: Heroicons
 
-    Navigate into your new site’s directory and start it up.
+## 📦 Installation
 
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
+1. Clone the repository:
 
-3.  **Open the code and start customizing!**
+```bash
+git clone [your-repo-url]
+```
 
-    Your site is now running at http://localhost:8000!
+2. Install dependencies:
 
-    Edit `src/pages/index.js` to see your site update in real-time!
+```bash
+yarn install
+# or
+npm install
+```
 
-4.  **Learn more**
+3. Start the development server:
 
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+```bash
+yarn develop
+# or
+npm run develop
+```
 
-    - [Tutorials](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+The site will be available at `http://localhost:8000`
 
-    - [Guides](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+## 🏗️ Project Structure
 
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+```
+src/
+├── assets/      # Static assets like images
+├── components/  # Reusable React components
+├── constants/   # Constant values and configurations
+├── pages/       # Gatsby pages
+└── utils/       # Utility functions
+```
 
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+## 🚀 Deployment
 
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+Build the project:
 
-## 🚀 Quick start (Gatsby Cloud)
+```bash
+yarn build
+# or
+npm run build
+```
 
-Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
+Serve the production build:
 
-[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-minimal)
+```bash
+yarn serve
+# or
+npm run serve
+```
+
+## 📝 License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## 👨‍💻 Author
+
+Johanes Peter Vincentius
